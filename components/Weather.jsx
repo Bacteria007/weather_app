@@ -11,7 +11,7 @@ const Weather = ({ data }) => {
   return (
     <div className="relative flex flex-col justify-between max-w-[500px] w-full h-[90vh] m-auto p-4 text-gray-300 z-10">
       {/* Top */}
-      <div className="relative flex justify-between pt-12">
+      <div className="relative flex justify-between items-center lg:pt-12">
         <div className="flex flex-col items-center">
           <Image
             width={100}
@@ -21,7 +21,7 @@ const Weather = ({ data }) => {
           />
           <p className="text-2xl">{data.weather[0].main}</p>
         </div>
-        <p className="text-9xl">{kelvinToCelsius(data.main.temp).toFixed(0)}&#176;C</p>
+        <p className="text-7xl lg:text-9xl">{kelvinToCelsius(data.main.temp).toFixed(0)}&#176;C</p>
       </div>
       {/* bottom */}
       <div className="bg-black/50 relative p-8 rounded-md">
