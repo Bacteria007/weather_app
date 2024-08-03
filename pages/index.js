@@ -73,7 +73,7 @@ export default function Home() {
                 className="bg-transparent border-none text-white focus:outline-none text-2xl placeholder:text-white"
               />
             </div>
-            <button type="submit"><BsSearch size={20} /></button>
+            <button type="submit" className="p-2"><BsSearch size={20} /></button>
           </form>
         </div>
         {/* Weather */}
